@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.springdemo.dao.TestUserMapper">
+    <select id="selectid" resultType="TestUser">
+        select idtest_user,user_name,user_sex,user_age
+        from test_user
+        where idtest_user=#{idtestuser}
+    </select>
+</mapper>
